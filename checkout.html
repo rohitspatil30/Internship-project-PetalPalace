@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Petal Palace</title>
+    <link rel="stylesheet" href="./stylesheet/styles.css">
+</head>
+
+<body>
+
+    <!-- Header or Navigation bar-->
+    <nav class="nav__container">
+        <a class="nav__logo">
+            <img class="logo" src="./images/logo-removebg-preview.png" alt="logo.png">
+            Petal Palace
+        </a>
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link">
+                <div class="dropdown">
+                    <span>Products</span>
+                    <div class="dropdown-content">
+                        <a href="seasonal.html">
+                            <p>Seasonal</p>
+                        </a>
+                        <br>
+                        <a href="special_event.html">
+                            <p>Special Events</p>
+                        </a>
+                        <br>
+                        <a href="bouquets.html">
+                            <p>Bouqets</p>
+                        </a>
+                    </div>
+            </li>
+            </li>
+            <li class="link"><a href="about_us.html">About</a></li>
+            <li class="link"><a href="cart.html">Cart</a></li>
+            <li class="link"><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="hamburgerNav">
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link">
+                <div class="dropdown">
+                    <span>Products</span>
+                    <div class="dropdown-content">
+                        <a href="seasonal.html">
+                            <p>Seasonal</p>
+                        </a>
+                        <br>
+                        <a href="special_event.html">
+                            <p>Special Events</p>
+                        </a>
+                        <br>
+                        <a href="bouquets.html">
+                            <p>Bouqets</p>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="link"><a href="about_us.html">About</a></li>
+            <li class="link"><a href="cart.html">Cart</a></li>
+            <li class="link"><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+
+    <!-- checkoutContent -->
+
+    <main id="boxes">
+        <div class="container1">
+            <h1>Checkout</h1>
+            <form class="checkout-form">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                        <option value="in">India</option>
+                    </select>
+
+                </div>
+                <div>
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+
+                </div>
+                <div>
+                    <label for="zipcode">Zip Code</label>
+                    <input type="text" id="zipcode" name="zipcode" required>
+                </div>
+                <div>
+                    <label for="">Payment Method</label><br>
+                    <div class="payment-method">
+                        <p>Select Payment Method</p>
+                        <div class="payment-options">
+                            <label for="credit-card">
+                                <input type="radio" id="credit-card" name="payment-method" checked>
+                                <span>Credit Card</span>
+                            </label>
+                            <label for="paypal">
+                                <input type="radio" id="paypal" name="payment-method">
+                                <span> PayPal</span>
+                            </label>
+                            <label for="google-pay">
+                                <input type="radio" id="google-pay" name="payment-method">
+                                <span>Google Pay</span>
+                            </label>
+                            <label for="cash-on-delivery">
+                                <input type="radio" id="cash-on-delivery" name="payment-method">
+                                <span>Cash On Delivery</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <button type="submit">Place Order</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Order summary -->
+
+        <div class="container2">
+            <div class="order-summary">
+                <h1>Order Summary</h1>
+                <div class="order-item">
+                    <img src="./images/flower1.jpg" alt="Flower 1" class="order-item-image">
+                    <div class="order-item-details">
+                        <h3>Special EventTulips</h3>
+                        <p>Price: $549</p>
+                        <p>Quantity: 1</p>
+                        <p>Subtotal: $549</p>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <img src="./images/flower3.jpg" alt="Flower 2" class="order-item-image">
+                    <div class="order-item-details">
+                        <h3>Bouquets Roses</h3>
+                        <p>Price: $870</p>
+                        <p>Quantity: 2</p>
+                        <p>Subtotal: $1740</p>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <img src="./images/flower6.jpg" alt="Flower 3" class="order-item-image">
+                    <div class="order-item-details">
+                        <h3>Seasonal Roses</h3>
+                        <p>Price: $349</p>
+                        <p>Quantity: 1</p>
+                        <p>Subtotal: $349</p>
+                    </div>
+                </div>
+                <div class="order-total">
+                    <h3>
+                        <center>Total: $2638</center>
+                    </h3>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+<!-- Footer -->
+
+<footer class="section__container footer__container">
+    <div class="footer__col">
+        <h4 class="footer__heading"> <a href="contact_us.html">CONTACT US</a> </h4>
+
+    </div>
+    <div class="footer__col">
+        <h4 class="footer__heading"><a href="about_us.html">ABOUT US</a></h4>
+
+    </div>
+
+    <div class="footer__col">
+        <h4 class="footer__heading">INSTAGRAM</h4>
+
+    </div>
+
+    <div class="footer__col">
+        <h4 class="footer__heading">PRIVACY POLICY
+
+        </h4>
+
+    </div>
+</footer>
+
+<hr />
+
+<div class="section__container footer__bar">
+    <div class="copyright">
+        Copyright © Petal Palace. All rights reserved.
+    </div>
+    <div class="footer__form">
+        <form>
+            <input type="text" placeholder="ENTER YOUR EMAIL" />
+            <button class="btn" type="submit">SUBSCRIBE</button>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
